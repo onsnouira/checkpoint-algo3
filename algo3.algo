@@ -1,0 +1,20 @@
+ALGORITHM insertion sort
+VAR
+    tab : ARRAY_OF INTEGER[n];
+    i:INTEGER:=0;
+    n:INTEGER
+BEGIN
+Read(n)
+WHILE (n<1) DO
+   Write('postive numbers')
+   Read(n)
+END_WHILE
+FOR i FROM 1 TO n STEP 1  DO
+   IF (tab[i-1]>tab[i]) THEN
+    temp:=tab[i]
+    tab[i]:=tab[i-1]
+    tab[i-1]:=temp
+   END_IF
+END_FOR
+
+END
